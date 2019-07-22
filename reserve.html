@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+	Reserve Page for Lull Spa and Retreat
+	Author: Kat
+	Date: 7-12-19
+	filename: reserve.html
+	-->
+	
+<head>
+
+	<meta charset="utf-8">
+	<title>Lull Spa and Retreat</title>
+	<link href="reservestyles.css" rel="stylesheet" />
+	<!-- headings and nav fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Oswald&display=swap" rel="stylesheet">
+	<!-- responsive design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+
+<body>
+	<div class="main">
+	<h1 id="mainHeading">Lull</h1>
+	<h2>Spa and Retreat</h2>
+	</div>
+
+	<div id="nav">
+		<li><a href="offer.html">What We Offer</a></li>
+		<li><a href="locations.html">Locations</a></li>
+		<li><a id="currentPage" href="reserve.html">Reserve Online</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+		<li><a href="home.html">Home</a></li>
+	</div>
+
+	<form id="booking" action="thankyou.html" method="post">
+			<fieldset id="custInfo">
+				<legend>Information</legend>
+				<div class="formRow">
+					<label for="name">Name*</label>
+					<input name="custName" id="name" type="text" placeholder="First and Last Name" autofocus required />
+				</div>
+				
+				<div class="formRow">
+					<label for="street">Street Address</label>
+					<input name="custStreet" id="street" type="text" />
+				</div>
+				
+				<div class="formRow">
+					<label for="city">City</label>
+					<input name="custCity" id="city" type="text" />
+				</div>
+				
+				<div class="formRow">
+					<label for="state">State</label>
+					<input name="custState" id="state" type="text" maxlength="2" />
+				</div>
+				
+				<div class="formRow">
+					<label for="zip">Zip Code</label>
+					<input name="custZip" id="zip" type="text" placeholder="#####" pattern="^\d{5}$" />
+				</div>
+				
+				<div class="formRow">
+					<label for="phone">Phone Number</label>
+					<input name="custPhone" id="phone" type="tel" placeholder="(###) ###-####" 
+						   pattern="^\d{10}$|^\-$|^(\(^\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+				</div>
+				
+				<div class="formRow">
+					<label for="email">E-mail*</label>
+					<input name="custEmail" id="email" type="email" required />
+				</div>	
+
+				<div class="formRow">
+					<label for="calendar">Select Date</label>
+					<input name="selectDate" id="date" type="date" />
+				</div>
+				
+				<div class="formRow">
+					<label for="location">Select Location</label>
+					<select name="select" id="location" size="4">
+						<option value="select1">New York</option>
+						<option value="select2">Florida</option>
+						<option value="select3">Colorado</option>
+						<option value="select4">California</option>
+					</select>
+				</div>
+				
+				<input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+				<label for="mailCB">  Add me to your mailing list for event alerts!</label>
+				
+				<div id="button">
+				<input type="submit" value="Submit" />
+			</div>
+				
+			</fieldset>
+	</form>
+<footer>
+	&#169; Lull Spa and Retreat 2019 &#183;
+</footer>
+
+</body>
+</html>

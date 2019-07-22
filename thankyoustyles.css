@@ -1,0 +1,136 @@
+/* Stylesheet for Lull Spa and Retreat
+
+	Author: Kat
+	Date: 7-12-19
+	filename: thankyoustyles.css
+	*/
+	
+/*=============================
+-----DESKTOP min-width 769-----
+===============================*/		
+	
+html {
+	background-image: url("leaves.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h1 {
+	display: flex;
+	position: relative;
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 10em;
+	text-shadow: 3px 3px 3px black;
+	color: white;
+	text-align: center;
+	margin-top: 1em;
+	margin-left: 1.5em;
+}
+
+#nav {
+	display: flex;
+	position: absolute;
+	list-style-type: none;
+	decoration: none;
+	text-align: center;
+	margin-top: -28em;
+	padding-top: 25px;
+	padding-bottom: 25px;	
+}
+
+a {
+	display: flex;
+	/*position: relative;*/
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.3em;
+	text-shadow: 3px 3px 3px black;
+	color: ivory;
+	margin-left: 18em;
+	margin-top: 10em;
+	padding-bottom: 2.2em;
+	padding-left: 20px;
+	padding-right: 10px;
+	float: left;	
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	text-align: right;
+}
+
+/*============================
+-----MOBILE max-width 768----- 
+=============================*/
+
+@media only screen and (max-width: 768px) {
+
+	html {
+	background-image: url("leaves.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	}
+
+h1 {
+	display: flex;
+	position: relative;
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 5em;
+	text-shadow: 3px 3px 3px black;
+	color: white;
+	text-align: center;
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+	a {
+	display: flex;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.3em;
+	text-shadow: 3px 3px 3px black;
+	color: ivory;
+	margin-left: 4em;
+	margin-right: auto;
+	margin-top: 10em;		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
